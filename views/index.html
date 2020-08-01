@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+  
+  <!-- Custom CSS -->
+  <link href="/css/style.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="/js/script.js" defer></script>
+
+  <title>{{ .Title }}</title>
+</head>
+<body>
+  <div class="calculator-grid">
+    <div class="display">
+      <div class="previous-operand">1024 +</div>
+      <div class="current-operand">576</div>
+    </div>
+
+    <button data-type="all-clear" class="horizontal-span-two">AC</button>
+    <button data-type="delete">DEL</button>
+    <button data-type="operator">×</button>
+    <button data-type="number">1</button>
+    <button data-type="number">2</button>
+    <button data-type="number">3</button>
+    <button data-type="operator">÷</button>
+    <button data-type="number">4</button>
+    <button data-type="number">5</button>
+    <button data-type="number">6</button>
+    <button data-type="operator">+</button>
+    <button data-type="number">7</button>
+    <button data-type="number">8</button>
+    <button data-type="number">9</button>
+    <button data-type="operator">-</button>
+    <button data-type="number">.</button>
+    <button data-type="number">0</button>
+    <button data-type="equals" class="horizontal-span-two">=</button>
+  </div>
+</body>
+</html>
