@@ -18,6 +18,11 @@ func relativePath() string {
 	return path.Dir(filename)
 }
 
+func index(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
+	t := template.Must(template.ParseFiles(relativePath() + "/views/index.html"))
+	t.Execute(w, nil)
+}
+
 func main() {
 	mux := httprouter.New()
 	mux.GET("/", index)
@@ -31,9 +36,4 @@ func main() {
 	}
 
 	server.ListenAndServe()
-}
-
-func index(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
-	t := template.Must(template.ParseFiles(relativePath() + "/views/index.html"))
-	t.Execute(w, nil)
 }
